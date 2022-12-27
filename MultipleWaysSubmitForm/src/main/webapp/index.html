@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function formSubmit() {
+		let ageObject = document.getElementById('age');
+		
+		if(isNaN(ageObject.value) || ageObject.value === ''){
+			alert('Hey! Please enter valid age!!!');
+			return false;
+		}
+		
+		
+		
+		document.ageForm.submit();
+		
+	}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="ageForm" action="form1" method="GET">
+
+		Age : <input type="text" name="age" id="age"/>  <br><br><br>
+		
+		
+		<a href="form1?age=43"> CheckAge </a><br><br><br><br>
+		
+		<input type="button" value="CheckAge" onclick="formSubmit();">
+
+	</form>
+
+
+</body>
+</html>
