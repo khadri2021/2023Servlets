@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<script type="text/javascript">
+	function studentRegValidation() {
+		debugger;
+		alert("function called");
+		let fname=document.getElementById("fname").value;
+		
+		if(fname === ''){
+			alert('Please enter first name!!');
+		return false;
+		}
+		
+		return true;
+	}
+</script>
+<title></title>
+</head>
+<body bgcolor="#FF008979">
+	<form action="register" onsubmit="return studentRegValidation()">
+		<table border="2">
+			<caption>Student Registration Form</caption>
+			<tr>
+				<td>First Name : <input type="text" id="fname" name="fname">
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name : <input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<td>Gender : <input type="radio" name="gender" value="male">
+					Male <input type="radio" name="gender" value="female">
+					Female
+				</td>
+
+			</tr>
+			<tr>
+				<td>Courses offers <select name="course">
+						<option>-- select --</option>
+						<option value="bsc">BSc (comp)</option>
+						<option value="btech">BTech</option>
+						<option value="mca">MCA</option>
+						<option value="mtech">MTech</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Sports offers <select multiple="multiple" name="hobbies">
+						<option value="FB">Foot Ball</option>
+						<option value="VB">Valley Ball</option>
+						<option value="CR">Cricket</option>
+						<option value="CH">Chess</option>
+				</select>
+				</td>
+
+			</tr>
+			<tr>
+				<td>Hostle Food Prefers <input type="checkbox" name="food"
+					value="veg"> Veg <input type="checkbox" name="food"
+					value="nv"> Non-Veg
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
