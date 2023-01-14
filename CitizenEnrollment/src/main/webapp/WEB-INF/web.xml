@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>DynamicWebPage2</display-name>
+	<servlet>
+		<servlet-name>countryServlet</servlet-name>
+		<servlet-class>com.khadri.citizen.controller.CountryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>countryServlet</servlet-name>
+		<url-pattern>/country</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>stateServlet</servlet-name>
+		<servlet-class>com.khadri.citizen.controller.StateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>stateServlet</servlet-name>
+		<url-pattern>/state</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>districtServlet</servlet-name>
+		<servlet-class>com.khadri.citizen.controller.DistrictServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>districtServlet</servlet-name>
+		<url-pattern>/district</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>mandalServlet</servlet-name>
+		<servlet-class>com.khadri.citizen.controller.MandalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mandalServlet</servlet-name>
+		<url-pattern>/mandal</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>townServlet</servlet-name>
+		<servlet-class>com.khadri.citizen.controller.TownServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>townServlet</servlet-name>
+		<url-pattern>/town</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>citizenServlet</servlet-name>
+		<servlet-class>com.khadri.citizen.controller.CitizenServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>citizenServlet</servlet-name>
+		<url-pattern>/citizen</url-pattern>
+	</servlet-mapping>
+</web-app>
