@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>ContextAttribute</display-name>
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>Servlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/hit1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>xyz</servlet-name>
+		<servlet-class>Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xyz</servlet-name>
+		<url-pattern>/hit2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>pqr</servlet-name>
+		<servlet-class>Servlet3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>pqr</servlet-name>
+		<url-pattern>/hit3</url-pattern>
+	</servlet-mapping>
+</web-app>
