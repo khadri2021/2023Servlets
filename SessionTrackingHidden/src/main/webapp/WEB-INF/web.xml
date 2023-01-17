@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>SessionTrackingHidden</display-name>
+	<servlet>
+		<servlet-name>one</servlet-name>
+		<servlet-class>BasicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>one</servlet-name>
+		<url-pattern>/hit1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>two</servlet-name>
+		<servlet-class>PersonalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>two</servlet-name>
+		<url-pattern>/hit2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>three</servlet-name>
+		<servlet-class>EducationalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>three</servlet-name>
+		<url-pattern>/hit3</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>four</servlet-name>
+		<servlet-class>MatchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>four</servlet-name>
+		<url-pattern>/hit4</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>five</servlet-name>
+		<servlet-class>RegisterDBServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>five</servlet-name>
+		<url-pattern>/hit5</url-pattern>
+	</servlet-mapping>
+</web-app>
